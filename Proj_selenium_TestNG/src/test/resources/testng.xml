@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="calculate suite">
+
+    <!-- parameters for AdvancedMathTest methods -->
+    <parameter name="a" value="3"/>
+    <parameter name="b" value="4"/>
+
+    <test name="BasicMathTests">
+    <groups>
+        <run>
+            <include name="G1"/>
+        </run>
+    </groups>
+        <classes>
+           <class name="calculator.basic_math"/>
+        </classes>
+    </test>
+
+    <test name="AdvancedMathTests">
+        <classes>
+            <class name="calculator.adv_math"/>
+        </classes>
+    </test>
+
+</suite>
