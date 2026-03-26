@@ -25,4 +25,9 @@ public class adv_math {
     public void square(int a) {
         System.out.println("Square = " + (a*a/1));
     }
+    @Test
+    @Parameters({"a"})  
+    public void power4(int a){
+        System.out.println("power4 = "+ (a*a*a*a));
+    }
 }
