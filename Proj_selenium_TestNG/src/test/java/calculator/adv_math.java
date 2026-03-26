@@ -30,4 +30,9 @@ public class adv_math {
     public void power4(int a){
         System.out.println("power4 = "+ (a*a*a*a));
     }
+    @Test
+    @Parameters({"a"})
+    public void power5(int a){
+        System.out.println("power5 = "+ (a*a*a*a*a));
+    }
 }
